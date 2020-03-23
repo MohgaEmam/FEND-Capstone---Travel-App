@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Trip Planner</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300&display=swap" rel="stylesheet">
+</head>
+ <body>
+<div id = "app">
+  <div class="container">
+    <header>
+        <h1>Travel Planner</h1>
+    </header>
+    <main class="main"> 
+      <div class="main__container">
+        <div id="image" class="planner__image"></div>
+        <div class="planner__details">
+          <div class="planner__form">
+            <form>
+                <label>My trip to: 
+                <input type="text" placeholder="Enter Location" value="" class="location" id="location"></label>
+                <label>Departing: 
+                <input type="date" placehoder="MM/DD/YYYY" value="" class="departure" id="travel-date"></label>
+                <button id="save-trip">save trip</button>
+                <button id="clear-trip" class="button--ghost">clear trip</button>
+            </form>
+          </div>
+          <div id="date" class="details__days-till"></div>
+          <div id="weather" class="details__weather"></div>
+        </div>
+      </div>
+    </main>
+</div>
+  </div>
+  <!-- <script>
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script> -->
+<script type="text/javascript" src="http://localhost:2000/bundle.min.js"></script></body>
+</html>
